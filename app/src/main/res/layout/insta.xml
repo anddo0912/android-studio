@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/insta_gradient"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="172dp"
+        android:layout_height="118dp"
+        android:layout_marginTop="44dp"
+        android:src="@drawable/instagraml"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="#E9FFFFFF" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="3dp"
+        android:background="#27F0ECEC"
+        android:hint="Email"
+        android:padding="15dp"
+        android:textColor="#fff"
+        android:textColorHint="#B9FFFFFF"
+        android:textSize="15sp"
+        app:layout_constraintHorizontal_bias="0.524"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image" />
+
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        app:layout_constraintTop_toBottomOf="@+id/email"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="#27F0ECEC"
+        android:padding="15dp"
+        android:textSize="15sp"
+        android:layout_marginTop="15dp"
+        android:hint="Password"
+        android:textColor="#fff"
+        android:textColorHint="#B9FFFFFF"
+        android:id="@+id/password"
+        />
+    <Button
+        android:alpha="0.1"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        app:layout_constraintTop_toBottomOf="@+id/password"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="20dp"
+        android:text="Log in"
+        android:id="@+id/btn"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:padding="12dp"
+        />
+
+    <TextView
+        android:id="@+id/forget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="8dp"
+        android:textAlignment="center"
+        android:textColor="#AEFFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@+id/btn"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:drawableTint="#fff"
+        android:text="Fogot your login detail? Get helping signing in"
+        android:textColor="#F0FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.607"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout"
+        app:layout_constraintVertical_bias="0.181" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="130dp"
+        android:layout_height="0.1dp"
+        android:layout_marginBottom="232dp"
+        android:background="#85FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.681"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="224dp"
+        android:text="OR"
+        android:textColor="#fff"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/forget"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="130dp"
+        android:layout_height="0.1dp"
+        android:layout_marginStart="236dp"
+        android:layout_marginBottom="232dp"
+        android:background="#85FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/facebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:drawableLeft="@drawable/facebook"
+        android:drawablePadding="10dp"
+        android:drawableTint="#fff"
+        android:text="Log in with Facebook"
+        android:textColor="#F0FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView" />
+
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintHorizontal_bias="0.594"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/forget">
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginBottom="60dp"
+        android:background="#4DFFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#0FF0ECEC"
+        android:gravity="center"
+        android:text="Don't have accout? Sign Up"
+        android:textAlignment="center"
+        android:textColor="#B7FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
